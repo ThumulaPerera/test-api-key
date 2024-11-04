@@ -12,11 +12,19 @@ def get_access_token():
     )
     return response.json()["access_token"]
 
+url = os.getenv('TOKEN_URL')
+print(f"token url: {url}")
+client_id = os.getenv('CLIENT_ID')
+print(f"client id: {client_id}")
+
+
 access_token = get_access_token()
 print(f"access token: {access_token}")
 
 # invoke an API with the access token
 url = os.getenv('API_URL')
+print(f"api url: {url}")
+
 url += "/greeting?name=John"
 
 response = requests.get(url, headers={"Authorization": f"Bearer {access_token}"})
