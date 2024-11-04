@@ -17,7 +17,7 @@ print(f"access token: {access_token}")
 
 # invoke an API with the access token
 url = os.getenv('API_URL')
-url += "?name=John"
+url += "/greeting?name=John"
 
 response = requests.get(url, headers={"Authorization": f"Bearer {access_token}"})
 print(f"response status: {response.status_code}")
