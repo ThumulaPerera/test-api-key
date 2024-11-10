@@ -5,9 +5,10 @@ def get_access_token():
     url = os.getenv('TOKEN_URL')
     client_id = os.getenv('CLIENT_ID')  # Read from environment variable
     client_secret = os.getenv('CLIENT_SECRET')
+    scopes = os.getenv('SCOPES')
     response = requests.post(
         url,
-        data={"grant_type": "client_credentials"},
+        data={"grant_type": "client_credentials", "scope": scopes},
         auth=(client_id, client_secret),
     )
     return response.json()["access_token"]
