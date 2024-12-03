@@ -2,11 +2,10 @@ schemaVersion: 1.0
 
 dependencies:
     serviceReferences:
-    - name: choreo:///teeorg/api-key/org-oauth-api-key/803f0/v1/ORGANIZATION
-      connectionConfig: 01ef9cdd-a283-1640-89aa-a2650031540a
+    - name: choreo:///teeorg/api-key/newprox/proxy/v1/PUBLIC
+      connectionConfig: 01efb16b-8142-1560-934d-bc5b543ac6e6
       env:
       - from: ServiceURL
         to: API_URL
       - from: ChoreoAPIKey
         to: API_KEY
-
