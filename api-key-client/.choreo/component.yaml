@@ -2,8 +2,8 @@ schemaVersion: 1.0
 
 dependencies:
     serviceReferences:
-    - name: choreo:///teeorg/api-key/swagger-petstore-yg/proxy/v1/PUBLIC
-      connectionConfig: 01efb16e-bbf9-1bd8-a3ef-e41f7726ba4e
+    - name: choreo:///teeorg/api-key/swagger-petstore-yh/proxy/v1/ORGANIZATION
+      connectionConfig: 01efb172-b141-1278-a3de-a67135cb74f9
       env:
       - from: ServiceURL
         to: API_URL
