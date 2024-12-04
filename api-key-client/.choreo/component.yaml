@@ -3,7 +3,7 @@ schemaVersion: 1.0
 dependencies:
     serviceReferences:
     - name: choreo:///usroutingtest/api-key/proxy-public-api-key/proxy/v1/PUBLIC
-      connectionConfig: 01efb223-56b3-1d46-8e8b-ea0d41775688
+      connectionConfig: 01efb225-72b8-1750-920c-4c48d68fef2d
       env:
       - from: ServiceURL
         to: API_URL
