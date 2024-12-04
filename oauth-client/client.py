@@ -15,6 +15,8 @@ def get_access_token():
 
 url = os.getenv('TOKEN_URL')
 print(f"token url: {url}")
+ctx = os.getenv('API_CONTEXT')
+print(f"api ctx: {ctx}")
 client_id = os.getenv('CLIENT_ID')
 print(f"client id: {client_id}")
 
@@ -26,7 +28,7 @@ print(f"access token: {access_token}")
 url = os.getenv('API_URL')
 print(f"api url: {url}")
 
-url += "/greeting?name=John"
+url += ctx
 
 response = requests.get(url, headers={"Authorization": f"Bearer {access_token}"})
 print(f"response status: {response.status_code}")
